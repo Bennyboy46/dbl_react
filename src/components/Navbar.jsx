@@ -26,11 +26,11 @@ const Navbar = () => {
             <h1 onClick={handleNav} className={logo ? 'hidden' : 'block'}>BEACHES.</h1>
             </div>
             <ul className='hidden md:flex'>
-                <li>Home</li>
-                <li>Destinations</li>
-                <li>Travel</li>
-                <li>View</li>
-                <li>Book</li>
+                <li className='hover:text-sky-600 hover:border-b-4 border-b border-transparent hover:border-sky-600'>Home</li>
+                <li className='hover:text-sky-600 hover:border-b-4 border-b border-transparent hover:border-sky-600'>Destinations</li>
+                <li className='hover:text-sky-600 hover:border-b-4 border-b border-transparent hover:border-sky-600'>Travel</li>
+                <li className='hover:text-sky-600 hover:border-b-4 border-b border-transparent hover:border-sky-600'>View</li>
+                <li className='hover:text-sky-600 hover:border-b-4 border-b border-transparent hover:border-sky-600'>Book</li>
             </ul>
             <div className='hidden md:flex'>
                 <BiSearch className='mr-2' size={20} />
