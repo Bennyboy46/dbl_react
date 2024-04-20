@@ -7,9 +7,10 @@ import {
   FaYoutube,
   FaGithub,
 } from 'react-icons/fa';
+
 const Footer = () => {
   return (
-    <div className='w-full bg-gray-100 py-16'>
+    <div className='w-full bg-gray-100 py-16 relative'>
       <div className='max-w-[1240px] mx-auto flex flex-col px-4'>
         <div className='sm:flex text-center justify-between items-center'>
           <h1>BEACHES.</h1>
@@ -19,9 +20,6 @@ const Footer = () => {
             <FaYoutube className='icon' />
             <FaPinterest className='icon' />
             <FaInstagram className='icon' />
-            <a href="https://github.com/Bennyboy46" target="_blank" rel="noopener noreferrer" className="icon">
-              <FaGithub />
-              </a>
           </div>
         </div>
         <div className='flex justify-between'>
@@ -39,12 +37,21 @@ const Footer = () => {
             <li>View</li>
             <li>Book</li>
           </ul>
+          <ul className='text-bottom lg:flex'>
+          </ul>
         </div>
-        <div className='flex justify-between text-left mb-2'>
+        {/* Made by Darshan and GitHub */}
+        <div className='flex justify-between text-left'>
           <ul className='lg:flex'>
             <li>Made by Darshan Benedict</li>
           </ul>
+          <div className="flex items-center">
+            <a href="https://github.com/Bennyboy46" target="_blank" rel="noopener noreferrer" className="icon mr-4">
+              <FaGithub />
+            </a>
+          </div>
         </div>
+        {/* End of Made by Darshan and GitHub */}
       </div>
     </div>
   );
